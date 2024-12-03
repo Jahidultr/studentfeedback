@@ -64,7 +64,7 @@ class FeedbackScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CafeteriaScreen(),
+                        builder: (context) => const CafeteriaScreen(),
                       ),
                     );
                   },
@@ -78,7 +78,7 @@ class FeedbackScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LabFeedbackScreen(),
+                        builder: (context) => const LabFeedbackScreen(),
                       ),
                     );
                   },
@@ -92,7 +92,7 @@ class FeedbackScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => TeachingQuaScreen(),
+                        builder: (context) => const TeachingQuaScreen(),
                       ),
                     );
                   },
@@ -106,7 +106,7 @@ class FeedbackScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => TransportScreen(),
+                        builder: (context) => const TransportScreen(),
                       ),
                     );
                   },

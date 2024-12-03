@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:studentfeedback/admin_panel/Admin_panel_screen.dart';
+import 'package:studentfeedback/admin_panel/authority_screen.dart';
 
 import 'feedback_screen.dart';
 import 'forgot_password_screen.dart';
@@ -42,11 +42,11 @@ class _SignInscreenState extends State<SignInscreen> {
                 ),
                 const SizedBox(width: 16),
                 ChoiceChip(
-                  label: const Text('Teacher'),
-                  selected: userType == 'Teacher',
+                  label: const Text('Authority'),
+                  selected: userType == 'Authority',
                   onSelected: (selected) {
                     setState(() {
-                      userType = 'Teacher';
+                      userType = 'Authority';
                     });
                   },
                   selectedColor: Colors.green,
@@ -114,13 +114,12 @@ class _SignInscreenState extends State<SignInscreen> {
                   ),
                 ),
                 onPressed: () {
-                  // Check if Teacher or Student,
-                  if (userType == 'Teacher') {
+                  if (userType == 'Authority') {
                     // If Teacher, navigate to Admin Panel Screen
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => AdminPanelScreen(),
+                        builder: (context) => AuthorityScreen(),
                       ),
                     );
                   } else {
